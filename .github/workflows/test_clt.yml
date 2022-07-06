@@ -9,9 +9,9 @@ on:
 
   workflow_dispatch:
 
-  jobs:
-    # This workflow contains a single job called "test"
-    test:
+jobs:
+  # This workflow contains a single job called "test"
+  test:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
