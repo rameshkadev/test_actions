@@ -19,9 +19,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2.3.4
 
-      - name: Run action
-        uses: ./
-
       - name: Install Resharper CLR
         uses: kasperhesthaven/setup-resharper-clt@v1.1.0
         with:
