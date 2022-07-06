@@ -28,4 +28,4 @@ jobs:
         run: cleanupcode.sh ConsoleApp/ConsoleApp.sln
 
       - name: Analyze code
-        run: InspectCode.sh ConsoleApp/ConsoleApp.sln -o=TestAnalysis.xml
+        run: inspectcode.sh ConsoleApp/ConsoleApp.sln -o=TestAnalysis.xml
