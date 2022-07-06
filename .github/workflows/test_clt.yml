@@ -25,7 +25,7 @@ jobs:
           resharper-version: "2022.1.2"
 
       - name: Clean up code
-        run: cleanupcode.sh ConsoleApp.sln
+        run: cleanupcode.sh ConsoleApp/ConsoleApp.sln
 
       - name: Analyze code
-        run: InspectCode.sh ConsoleApp.sln -o=TestAnalysis.xml
+        run: InspectCode.sh ConsoleApp/ConsoleApp.sln -o=TestAnalysis.xml
