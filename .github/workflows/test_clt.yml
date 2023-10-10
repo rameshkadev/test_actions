@@ -27,6 +27,12 @@ jobs:
           swea: True
           verbosity: INFO
           tool-version: 2023.2.0
+          
+      - name: Upload Installer
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: sca report
+          path: ./results.sarif.json
 
     permissions:
       security-events: write
