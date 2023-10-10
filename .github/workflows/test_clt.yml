@@ -22,7 +22,7 @@ jobs:
       - name: Annotate
         uses: JetBrains/ReSharper-InspectCode@v0.3
         with:
-          solution: ConsoleApp.sln
+          solution: ConsoleApp/ConsoleApp.sln
           swea: True
           verbosity: INFO
           tool-version: 2023.2.0
