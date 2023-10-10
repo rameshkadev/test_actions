@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    types: [opened, synchronize]
 
 
   workflow_dispatch:
@@ -24,14 +24,9 @@ jobs:
         with:
           solution: ConsoleApp/ConsoleApp.sln
           swea: True
+          format: Sarif
           verbosity: INFO
           tool-version: 2023.2.0
-          
-      - name: Upload Installer
-        uses: actions/upload-artifact@v3.1.2
-        with:
-          name: sca report
-          path:  /home/runner/work/test_actions/test_actions/results.sarif.json
 
     permissions:
       security-events: write
