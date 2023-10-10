@@ -19,13 +19,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2.3.4
 
-      - name: Install Resharper CLR
-        uses: kasperhesthaven/setup-resharper-clt@v1.1.0
+      - name: Annotate
+        uses: JetBrains/ReSharper-InspectCode@v0.3
         with:
-          resharper-version: "2022.1.2"
-
-      - name: Clean up code
-        run: cleanupcode.sh ConsoleApp/ConsoleApp.sln
-
-      - name: Analyze code
-        run: inspectcode.sh ConsoleApp/ConsoleApp.sln -o=TestAnalysis.xml
+          solution: ./ConsoleApp.sln
+          
