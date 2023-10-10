@@ -23,6 +23,7 @@ jobs:
         uses: JetBrains/ReSharper-InspectCode@v0.3
         with:
           solution: ConsoleApp/ConsoleApp.sln
+          format: Xml
           swea: True
           verbosity: INFO
           tool-version: 2023.2.0
