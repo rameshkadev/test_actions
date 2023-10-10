@@ -23,4 +23,6 @@ jobs:
         uses: JetBrains/ReSharper-InspectCode@v0.3
         with:
           solution: ./ConsoleApp.sln
-          
+          swea: True
+          verbosity: INFO
+          tool-version: 2020.3.3
